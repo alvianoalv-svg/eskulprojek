@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="description" content="Form pendaftaran ekstrakurikuler SMKN 1 Sudimoro.">
+  <title>Pendaftaran Ekstrakurikuler — SMKN 1 Sudimoro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="preloader"><div class="loader-ring"></div></div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html" aria-label="Beranda Portal Ekskul">
+      <img src="../assets/images/logo-smkn1-sudimoro.png" alt="Logo SMKN 1 Sudimoro">
+      <span class="brand-text"><strong>SMKN 1 Sudimoro</strong><small>Portal Ekstrakurikuler</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a data-page="index.html" href="../index.html">Beranda</a>
+      <a data-page="index.html#ekskul" href="../index.html#ekskul">Ekskul</a>
+      <a data-page="pramuka" href="../pramuka/index.html">Pramuka</a>
+      <a data-page="osis" href="../osis/index.html">OSIS</a>
+      <a data-page="pmr" href="../pmr/index.html">PMR</a>
+      <a data-page="pendaftaran" href="../pendaftaran/index.html">Pendaftaran</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Ganti tema"></button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <a class="btn btn-primary" href="../pendaftaran/index.html">Daftar Sekarang <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" data-aos="fade-up">FORMULIR ONLINE</span>
+    <h1 data-aos="fade-up" data-aos-delay="80">Mulai dari <span style="color:var(--primary)">satu langkah.</span></h1>
+    <p data-aos="fade-up" data-aos-delay="160">Lengkapi data di bawah. Validasi berjalan secara real-time untuk membantu memastikan setiap kolom sudah siap dikirim.</p>
+  </div>
+</section>
+
+<section class="section compact">
+  <div class="container">
+    <div class="form-shell glass" data-aos="fade-up">
+      <div class="section-head" style="margin-bottom:28px">
+        <span class="eyebrow">Data siswa</span>
+        <h2 class="section-title" style="font-size:2rem">Pendaftaran <span>Ekstrakurikuler</span></h2>
+        <p class="section-subtitle">Demo front-end: data contoh ini disimpan di localStorage browser dan belum terkirim ke server sekolah.</p>
+      </div>
+      <form id="registrationForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <input id="nama" name="nama" type="text" placeholder=" " autocomplete="name">
+            <label for="nama">Nama lengkap</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field">
+            <input id="nis" name="nis" type="text" inputmode="numeric" placeholder=" ">
+            <label for="nis">NIS</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field">
+            <select id="kelas" name="kelas">
+              <option value="" selected disabled>Pilih kelas</option>
+              <option>X RPL</option>
+              <option>X lainnya</option>
+              <option>XI RPL</option>
+              <option>XI lainnya</option>
+              <option>XII RPL</option>
+              <option>XII lainnya</option>
+            </select>
+            <label for="kelas">Kelas</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field">
+            <select id="organisasi" name="organisasi">
+              <option value="" selected disabled>Pilih organisasi</option>
+              <option>Tirtawening Scout</option>
+              <option>OSIS SMKN 1 Sudimoro</option>
+              <option>PMR Wira Kanesiro</option>
+            </select>
+            <label for="organisasi">Ekstrakurikuler</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field">
+            <input id="email" name="email" type="email" placeholder=" " autocomplete="email">
+            <label for="email">Email</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field">
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder=" " autocomplete="tel">
+            <label for="whatsapp">Nomor WhatsApp</label>
+            <small class="field-msg"></small>
+          </div>
+          <div class="field full">
+            <textarea id="alasan" name="alasan" placeholder=" "></textarea>
+            <label for="alasan">Kenapa ingin bergabung?</label>
+            <small class="field-msg"></small>
+          </div>
+        </div>
+        <div class="submit-row">
+          <button class="btn btn-primary submit-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Kirim Pendaftaran</button>
+        </div>
+        <p class="form-note"><i class="fa-solid fa-lock"></i> Untuk versi produksi, hubungkan submit form ke backend/database sekolah. Jangan menyimpan data sensitif hanya di localStorage.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section compact">
+  <div class="container cards-3">
+    <div class="card glass" data-aos="fade-up"><div class="icon-badge"><i class="fa-solid fa-bolt"></i></div><h3>Validasi langsung</h3><p>Kolom berubah hijau saat valid dan merah ketika perlu diperbaiki.</p></div>
+    <div class="card glass" data-aos="fade-up" data-aos-delay="120"><div class="icon-badge"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>Nyaman di HP</h3><p>Layout responsif untuk desktop, tablet, dan smartphone.</p></div>
+    <div class="card glass" data-aos="fade-up" data-aos-delay="240"><div class="icon-badge"><i class="fa-solid fa-circle-check"></i></div><h3>Modal sukses</h3><p>Setelah submit, muncul pop-up interaktif sebagai konfirmasi.</p></div>
+  </div>
+</section>
+
+<div class="modal" id="successModal" aria-hidden="true">
+  <div class="modal-box">
+    <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+    <h3>Selamat! Pendaftaran Berhasil</h3>
+    <p>Halo <strong class="success-name">Siswa</strong>, data demo pendaftaranmu sudah tersimpan di browser ini.</p>
+    <button class="btn btn-primary btn-block modal-close" type="button" style="margin-top:22px">Tutup</button>
+  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="../index.html" class="footer-brand">
+          <img src="../assets/images/logo-smkn1-sudimoro.png" alt="Logo SMKN 1 Sudimoro">
+          <div><strong>SMKN 1 Sudimoro</strong><div style="color:#8ea2b7;font-size:.76rem">Portal Ekstrakurikuler</div></div>
+        </a>
+        <p>Wadah informasi kegiatan siswa untuk mengembangkan kepemimpinan, kreativitas, kepedulian sosial, kedisiplinan, dan kerja sama.</p>
+        <div class="social-row">
+          <a class="social-btn" data-social="tirtawening" target="_blank" rel="noopener" aria-label="Instagram Pramuka"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-btn" data-social="osis" target="_blank" rel="noopener" aria-label="Instagram OSIS"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-btn" data-social="pmr" target="_blank" rel="noopener" aria-label="Instagram PMR"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-btn" data-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp Admin"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Organisasi</div>
+        <div class="footer-links">
+          <a href="../pramuka/index.html">Tirtawening Scout</a>
+          <a href="../osis/index.html">OSIS SMKN 1 Sudimoro</a>
+          <a href="../pmr/index.html">PMR Wira Kanesiro</a>
+          <a href="../pendaftaran/index.html">Form Pendaftaran</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Kontak</div>
+        <div class="footer-links">
+          <a href="../index.html#ekskul">Lihat semua ekskul</a>
+          <a data-whatsapp target="_blank" rel="noopener">Chat WhatsApp Admin</a>
+          <a href="../pendaftaran/index.html">Ajukan pendaftaran</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> SMKN 1 Sudimoro. Portal Ekstrakurikuler.</span>
+      <span>Dibuat dengan semangat berkarya.</span>
+    </div>
+  </div>
+</footer>
+<button class="backtop" type="button" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="toast" aria-live="polite"></div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
