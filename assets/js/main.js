@@ -381,7 +381,7 @@
       }
 
       const GOOGLE_SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwIP3DQDoHwTa6cKzgU5llBoO5aIWpVu-zGnx8EaJBJaZViZVWpY-HYYvVhKrkkHDv2Og/exec";
+        "https://script.google.com/macros/s/AKfycbw-7JCmhK0B9Py3iMIai4IWgFbsnLThUob81gBHDIKvBVknVYYE7yjT-NLuP-gXY71y5A/exec";
 
       try {
         const data = new URLSearchParams(entry);
